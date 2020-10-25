@@ -1,0 +1,59 @@
+object Form3: TForm3
+  Left = 222
+  Height = 535
+  Top = 104
+  Width = 648
+  Caption = 'Form3'
+  ClientHeight = 535
+  ClientWidth = 648
+  LCLVersion = '1.6.4.0'
+  object OpenGLControl1: TOpenGLControl
+    Left = 0
+    Height = 535
+    Top = 0
+    Width = 648
+    Align = alClient
+    OnClick = OpenGLControl1Click
+    OnPaint = OpenGLControl1Paint
+  end
+  object StaticText1: TStaticText
+    Left = 56
+    Height = 31
+    Top = 256
+    Width = 528
+    Caption = 'Beispiele für was man mit OpenGL zeichnen kann in 2D'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = StaticText1Click
+    OnMouseEnter = StaticText1MouseEnter
+    OnMouseLeave = StaticText1MouseLeave
+    ParentFont = False
+    TabOrder = 1
+  end
+  object ComboBox1: TComboBox
+    Left = 520
+    Height = 23
+    Top = 16
+    Width = 100
+    ItemHeight = 15
+    Items.Strings = (
+      'Punkt'
+      'Linie'
+      'Geschlossenen Lienienzug'
+      'Dreieck'
+      'Dreieckserie'
+      'Dreieckserie um zentralen Punkt'
+      'Viereck'
+      'Viereckserie'
+      'Polygon'
+    )
+    TabOrder = 2
+  end
+  object ApplicationProperties: TApplicationProperties
+    left = 32
+    top = 32
+  end
+end
